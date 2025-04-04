@@ -1,0 +1,20 @@
+name: innovation-assessment-tool
+region: nyc
+services:
+  - name: web
+    github:
+      repo: ${GITHUB_REPOSITORY}
+      branch: main
+      deploy_on_push: true
+    build_command: npm install && npm run build
+    run_command: npx serve -s build
+    http_port: 3000
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    routes:
+      - path: /
+    envs:
+      - key: REACT_APP_NODE_ENV
+        value: production
+      - key: REACT_APP_PUBLIC_URL
+        value: ${APP_URL}
