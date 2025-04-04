@@ -367,20 +367,20 @@ function App() {
             height: `${matrixSize}px`,
           }}>
             {/* Quadrant Backgrounds */}
-            <div className="matrix-quadrant" style={{ top: '0', left: '0', width: '50%', height: '50%', backgroundColor: '#F44336' }}></div>
+            <div className="matrix-quadrant" style={{ top: '0', left: '0', width: '50%', height: '50%', backgroundColor: '#4CAF50' }}></div>
             <div className="matrix-quadrant" style={{ top: '0', left: '50%', width: '50%', height: '50%', backgroundColor: '#9C27B0' }}></div>
             <div className="matrix-quadrant" style={{ top: '50%', left: '0', width: '50%', height: '50%', backgroundColor: '#2196F3' }}></div>
-            <div className="matrix-quadrant" style={{ top: '50%', left: '50%', width: '50%', height: '50%', backgroundColor: '#4CAF50' }}></div>
+            <div className="matrix-quadrant" style={{ top: '50%', left: '50%', width: '50%', height: '50%', backgroundColor: '#F44336' }}></div>
 
             {/* Grid lines */}
             <div className="matrix-line" style={{ top: '50%', left: '0', right: '0', height: '2px', position: 'absolute', backgroundColor: '#ccc' }}></div>
             <div className="matrix-line" style={{ top: '0', bottom: '0', left: '50%', width: '2px', position: 'absolute', backgroundColor: '#ccc' }}></div>
 
             {/* Quadrant Labels */}
-            <div className="matrix-label" style={{ top: '25%', left: '25%', transform: 'translate(-50%, -50%)', color: '#F44336' }}>Dependent<br/>Incrementalist</div>
+            <div className="matrix-label" style={{ top: '25%', left: '25%', transform: 'translate(-50%, -50%)', color: '#4CAF50' }}>Breakthrough<br/>Innovator</div>
             <div className="matrix-label" style={{ top: '25%', left: '75%', transform: 'translate(-50%, -50%)', color: '#9C27B0' }}>Dependent<br/>Disruptor</div>
             <div className="matrix-label" style={{ top: '75%', left: '25%', transform: 'translate(-50%, -50%)', color: '#2196F3' }}>Independent<br/>Improver</div>
-            <div className="matrix-label" style={{ top: '75%', left: '75%', transform: 'translate(-50%, -50%)', color: '#4CAF50' }}>Breakthrough<br/>Innovator</div>
+            <div className="matrix-label" style={{ top: '75%', left: '75%', transform: 'translate(-50%, -50%)', color:  '#F44336'}}>Dependent<br/>Incrementalist</div>
 
             {/* Axis Labels */}
             <div className="matrix-label" style={{ top: '10px', left: '50%', transform: 'translateX(-50%)' }}>High</div>
